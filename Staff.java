@@ -3,13 +3,17 @@ public class Staff extends Person
     private int staffID;
     private String password;
     private String role; 
+    private MedicalRecord medRec;// Assuming a staff member can have patient medical record
+    private Appointment App; // Assuming a staff member can have patient appointment
 
-    public Staff(String nric, String name, String phoneNumber, int staffID, String password, String role) 
+    public Staff(String nric, String name, String phoneNumber, int staffID, String password, String role, MedicalRecord medRec, Appointment App) 
     {
         super(nric, name, phoneNumber);
         this.staffID = staffID;
         this.password = password;
         this.role = role;
+        this.medRec = medRec;
+        this.App = App;
     }
 	
 	//setter
@@ -25,6 +29,14 @@ public class Staff extends Person
 	{
 		this.role = role;
 	}
+    public void setMedRec(MedicalRecord medRec) 
+    {
+        this.medRec = medRec;
+    }
+    public void setApp(Appointment App) 
+    {
+        this.App = App;
+    }
 	
 	//getter
     public int getStaffID() 
@@ -39,7 +51,14 @@ public class Staff extends Person
     {
     	return role;
     }
-    
+    public MedicalRecord getMedRec() 
+    {
+        return medRec;
+    }
+    public Appointment getApp() 
+    {
+        return App;
+    }
     // benda ni akan semak password dengan id (kalau id atau pass salah auto dua dua salah)
     public boolean login(int id, String pass) 
     {
@@ -49,6 +68,6 @@ public class Staff extends Person
     @Override
     public String toString() 
     {
-        return super.toString() + "Staff ID : " + staffID + "\nRole Of Doctor : " + role;
+        return super.toString() + "Staff ID : " + staffID + "\nRole Of Doctor : " + role+ "\nMedical Record : " + medRec + "\nAppointment : " + App;
     }
 }
