@@ -1,3 +1,4 @@
+package src.main.java.com.smartcare;
 public class MedicalRecord 
 {
     private String careType;  
@@ -36,6 +37,12 @@ public class MedicalRecord
     { 
     	return careType; 
     }
+
+	public String getDetails()
+	{
+		return details;
+	}
+
     public double getMedicalFee() 
     { 
     	return medicalFee; 
