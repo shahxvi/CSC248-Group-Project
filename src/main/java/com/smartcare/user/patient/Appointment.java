@@ -1,4 +1,4 @@
-package com.smartcare;
+package com.smartcare.user.patient;
 
 public class Appointment 
 {

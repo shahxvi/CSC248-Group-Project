@@ -6,10 +6,10 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-import com.smartcare.Appointment;
 import com.smartcare.util.LinkedList;
-import com.smartcare.MedicalRecord;
-import com.smartcare.Patient;
+import com.smartcare.user.patient.Appointment;
+import com.smartcare.user.patient.MedicalRecord;
+import com.smartcare.user.patient.Patient;
 
 public class PatientFileHandler {
     File fileName;

@@ -1,4 +1,4 @@
-package com.smartcare;
+package com.smartcare.user;
 
 public abstract class Person 
 {

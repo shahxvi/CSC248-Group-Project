@@ -1,6 +1,8 @@
-package com.smartcare;
-public class Patient extends Person 
-{
+package com.smartcare.user.patient;
+
+import com.smartcare.user.Person;
+
+public class Patient extends Person {
     private String patientID;
     private MedicalRecord medRec; 
     private Appointment App;    
