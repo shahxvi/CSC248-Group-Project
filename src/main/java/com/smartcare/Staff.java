@@ -1,4 +1,5 @@
-package src.main.java.com.smartcare;
+package com.smartcare;
+
 public class Staff extends Person 
 {
     private int staffID;

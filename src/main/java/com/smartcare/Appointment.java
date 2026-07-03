@@ -1,4 +1,5 @@
-package src.main.java.com.smartcare;
+package com.smartcare;
+
 public class Appointment 
 {
     private String appointmentId;

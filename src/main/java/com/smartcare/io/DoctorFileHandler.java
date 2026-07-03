@@ -1,14 +1,15 @@
-package src.main.java.com.smartcare.io;
+package com.smartcare.io;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-import src.main.java.com.smartcare.Appointment;
-import src.main.java.com.smartcare.LinkedList;
-import src.main.java.com.smartcare.MedicalRecord;
-import src.main.java.com.smartcare.Patient;
+import com.smartcare.Appointment;
+import com.smartcare.util.LinkedList;
+import com.smartcare.MedicalRecord;
+import com.smartcare.Patient;
 public class DoctorFileHandler {
     File fileName;
 
